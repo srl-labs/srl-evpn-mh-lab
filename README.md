@@ -1,11 +1,14 @@
 #  L2 EVPN Multi-homing Lab
 
-This lab gives you a pre-configured SR Linux-based fabric to experiment L2 EVPN multi-homing. It comprises a spine, three leaf(PEs) routers, and two Alpine Linux hosts(CEs). A multi-homed CE is connected to leaf1, while another is linked to leaf3 for testing purposes.
+This lab gives you a pre-configured SR Linux-based fabric to experiment L2 EVPN multi-homing. 
 
-<figure markdown>
-  <div class="mxgraph" style="max-width:100%;border:1px solid transparent;margin:0 auto; display:block;" data-mxgraph='{"page":0,"zoom":2,"highlight":"#0000ff","nav":true,"check-visible-state":true,"resize":true,"url":"https://raw.githubusercontent.com/srl-labs/srl-evpn-mh-lab/evpn-mh.drawio"}'></div>
-  <figcaption>EVPN multi-homing lab topology</figcaption>
-</figure>
+# Topology
+
+The topology comprises a spine, three leaf(PEs) routers, and two Alpine Linux hosts(CEs). A multi-homed CE is connected to leaf1, while another is linked to leaf3 for testing purposes.
+
+<p align="center">
+<img src="images/fabric-topo.drawio.svg" width="600" alt="EVPN multi-homing lab topology" title="EVPN multi-homing lab topology" class="caption" />
+</p>
 
 ## Lab deployment
 
@@ -21,7 +24,7 @@ The SR Linux configurations are under the 'configs' folder.
 
 Save [these][path-evpn-mh] to your Linux machine and deploy:
 
-```
+```bash
 # containerlab deploy -t evpn-mh01.clab.yml
 [root@clab-vm1 evpn-mh01]# containerlab deploy
 INFO[0000] Containerlab v0.44.0 started
@@ -95,7 +98,7 @@ ssh admin@clab-evpn01-leaf1
 
 To connect Alpine Linux (CEs):
 
-```
+```bash
 docker exec -it clab-evpn-mh01-ce1 bash
 ```
 
