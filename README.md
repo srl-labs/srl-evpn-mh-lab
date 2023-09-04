@@ -21,23 +21,7 @@ The SR Linux configurations are referred to as [config files][configs] (.cfg), a
 --8<-- "labs/evpn-mh/evpn-mh01.clab.yml"
 ```
 
-The SR Linux configurations are 
-=== "leaf1"
-    ```yaml
-    --8<-- "labs/evpn-mh/leaf1.cfg"
-    ```
-=== "leaf2"
-    ```yaml
-    --8<-- "labs/evpn-mh/leaf2.cfg"
-    ```
-=== "leaf3"
-    ```yaml
-    --8<-- "labs/evpn-mh/leaf3.cfg"
-    ```
-=== "spine1"
-    ```yaml
-    --8<-- "labs/evpn-mh/spine1.cfg"
-    ```
+The SR Linux configurations are under the 'configs' folder.
 
 Save [these][path-evpn-mh] to your Linux machine and deploy:
 
@@ -115,13 +99,9 @@ ssh admin@clab-evpn01-leaf1
 
 To connect Alpine Linux (CEs):
 
-=== "srv1"
     ```
     docker exec -it clab-evpn-mh01-ce1 bash
     ```
-=== "srv2"
-    ```
-    docker exec -it clab-evpn-mh01-ce1 bash
-    ```
+
 
 Please follow the tutorial to explore L2 EVPN Multi-homing further...
