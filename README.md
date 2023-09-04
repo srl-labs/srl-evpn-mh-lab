@@ -108,7 +108,7 @@ To connect Alpine Linux (CEs):
 docker exec -it clab-evpn-mh-ce1 bash
 ```
 
-# Verify Pre-configurations
+## Verify pre-configurations
 
 Check the fabric configurations;
 
