@@ -1,0 +1,18 @@
+all:
+  children:
+    linux:
+      hosts:
+        clab-evpn-mh-ce1:
+          ansible_host: 172.20.20.3
+        clab-evpn-mh-ce2:
+          ansible_host: 172.20.20.7
+    srl:
+      hosts:
+        clab-evpn-mh-leaf1:
+          ansible_host: 172.20.20.6
+        clab-evpn-mh-leaf2:
+          ansible_host: 172.20.20.2
+        clab-evpn-mh-leaf3:
+          ansible_host: 172.20.20.4
+        clab-evpn-mh-spine1:
+          ansible_host: 172.20.20.5

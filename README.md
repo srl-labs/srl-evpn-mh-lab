@@ -99,13 +99,31 @@ When containerlab finishes the deployment it provides a summary table that outli
 
 ```bash
 # default credentials admin:NokiaSrl1!
-ssh admin@clab-evpn01-leaf1
+ssh admin@clab-evpn-mh-leaf1
 ```
 
 To connect Alpine Linux (CEs):
 
 ```bash
-docker exec -it clab-evpn-mh01-ce1 bash
+docker exec -it clab-evpn-mh-ce1 bash
+```
+
+# Verify Pre-configurations
+
+Check the fabric configurations;
+
+```bash
+A:spine1# show network-instance default protocols bgp neighbor
+```
+```bash
+A:leaf1# info network-instance default
+```
+```bash
+A:leaf1# info network-instance mac-vrf-1
+```
+The ce interfaces;
+```bash
+bash-5.0# ip address
 ```
 
 Please follow the tutorial to explore L2 EVPN Multi-homing further...

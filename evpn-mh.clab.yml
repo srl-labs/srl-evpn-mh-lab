@@ -1,4 +1,4 @@
-name: evpn-mh01
+name: evpn-mh
 
 topology:
   kinds:
