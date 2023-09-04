@@ -22,7 +22,13 @@ The SR Linux configurations are referred to as [config files](configs) (.cfg), a
 
 The SR Linux configurations are under the 'configs' folder.
 
-Save [these][path-evpn-mh] to your Linux machine and deploy:
+Clone this repository to your Linux machine:
+
+```bash
+git clone https://github.com/srl-labs/srl-evpn-mh-lab.git && cd srl-evpn-mh-lab
+```
+
+and deploy with containerlab:
 
 ```bash
 # containerlab deploy -t evpn-mh01.clab.yml
