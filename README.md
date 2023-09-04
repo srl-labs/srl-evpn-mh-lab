@@ -15,7 +15,7 @@ This lab comes with pre-configurations that are explained in [L2 EVPN tutorial](
 
 The topology and pre-configurations are defined in the containerlab topology file.
 
-The SR Linux configurations are referred to as [config files](srl-evpn-mh-lab/configs) (.cfg), and Alpine Linux configurations are defined in the [topology file](evpn-mh.clab.yml) to be directly executed at the deployment.
+The SR Linux configurations are referred to as [config files](configs) (.cfg), and Alpine Linux configurations are defined in the [topology file](evpn-mh.clab.yml) to be directly executed at the deployment.
 
 The SR Linux configurations are under the 'configs' folder.
 
