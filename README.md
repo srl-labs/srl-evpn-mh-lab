@@ -95,7 +95,7 @@ INFO[0026] Executed command "ip addr add 192.168.0.23/24 dev eth3" on the node "
 +---+-----------------------+--------------+------------------------------+-------+---------+----------------+----------------------+
 ```
 
-A few seconds later containerlab finishes the deployment with providing a summary table that outlines connection details of the deployed nodes. In the "Name" column we have the names of the deployed containers and those names can be used to reach the nodes, for example to connect to the SSH of `leaf1`:
+When containerlab finishes the deployment it provides a summary table that outlines connection details of the deployed nodes. In the "Name" column we have the names of the deployed containers and those names can be used to reach the nodes, for example to connect to the SSH of `leaf1`:
 
 ```bash
 # default credentials admin:NokiaSrl1!
@@ -107,6 +107,5 @@ To connect Alpine Linux (CEs):
 ```bash
 docker exec -it clab-evpn-mh01-ce1 bash
 ```
-
 
 Please follow the tutorial to explore L2 EVPN Multi-homing further...
