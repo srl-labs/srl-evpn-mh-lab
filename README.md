@@ -1,6 +1,8 @@
 #  L2 EVPN Multi-homing Lab
 
-This lab gives you a pre-configured SR Linux-based fabric to experiment L2 EVPN multi-homing. 
+This lab sets up a pre-configured SR Linux-based fabric to experiment with L2 EVPN multi-homing.
+
+See [L2 EVPN Multihoming](LINK TBD) tutorial for an guided tour over this lab and multihoming concepts.
 
 # Topology
 
