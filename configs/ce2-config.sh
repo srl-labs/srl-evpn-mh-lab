@@ -1,4 +1,5 @@
 #!/bin/bash
+# setting three isolated (w/vrfs) interfaces with IPs from the same subnet to simulate multiple remote clients in one container.
 ip link set address 00:c1:ab:00:00:21 dev eth1
 ip link set address 00:c1:ab:00:00:22 dev eth2
 ip link set address 00:c1:ab:00:00:23 dev eth3

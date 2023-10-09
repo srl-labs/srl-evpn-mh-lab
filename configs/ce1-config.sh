@@ -1,4 +1,5 @@
 #!/bin/bash
+# creating bond interface w/LACP
 ip link add bond0 type bond mode 802.3ad
 ip link set address 00:c1:ab:00:00:11 dev bond0
 ip addr add 192.168.0.11/24 dev bond0
