@@ -8,6 +8,7 @@ topology:
       image: ghcr.io/srl-labs/alpine:latest
 
   nodes:
+    # srl nodes with startup configs
     leaf1:
       kind: srl
       type: ixrd2
@@ -24,6 +25,7 @@ topology:
       kind: srl
       type: ixrd3
       startup-config: configs/spine1.cfg
+    # alpine linux nodes with interface config bind and execution
     ce1:
       kind: linux
       binds:  
