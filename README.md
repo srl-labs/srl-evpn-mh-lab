@@ -1,8 +1,8 @@
-#  L2 EVPN Multi-homing Lab
+# L2 EVPN Multi-homing Lab
 
 This lab sets up a pre-configured SR Linux-based fabric to experiment with L2 EVPN multi-homing.
 
-See [L2 EVPN Multihoming](LINK TBD) tutorial for an guided tour over this lab and multihoming concepts.
+See [L2 EVPN Multihoming](http://learn.srlinux.dev/tutorials/evpn-mh/basics/) tutorial for an guided tour over this lab and multihoming concepts.
 
 # Topology
 
@@ -117,13 +117,17 @@ Check the fabric configurations;
 ```bash
 A:spine1# show network-instance default protocols bgp neighbor
 ```
+
 ```bash
 A:leaf1# info network-instance default
 ```
+
 ```bash
 A:leaf1# info network-instance mac-vrf-1
 ```
+
 The ce interfaces;
+
 ```bash
 bash-5.0# ip address
 ```
