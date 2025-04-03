@@ -3,7 +3,7 @@ name: evpn-mh
 topology:
   kinds:
     srl:
-      image: ghcr.io/nokia/srlinux:23.7.1
+      image: ghcr.io/nokia/srlinux:25.3.1
     linux:
       image: ghcr.io/srl-labs/alpine:latest
 
